@@ -129,4 +129,4 @@ function formatMessageTypeCSS(cellvalue, rowItem,rowid, columnid ){
     **/
 }
 
-export { formatTS ,formatMessageType,formatDescription, formatMessageTypeCSS,formatTIF}
+export { formatTS ,formatMessageType,formatDescription, formatMessageTypeCSS,formatTIF,formatBuySellIndicator}
