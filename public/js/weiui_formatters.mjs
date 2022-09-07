@@ -62,12 +62,25 @@ function formatDescription(value,a,b,c){
     }
 }
 
+
+
 function formatTIF(value){
 
     switch (value+''){
             case '99999' : return '99999 (Day)';
             case '0' : return '0 (Immediate)';
             default: return value;
+    }
+}
+
+function formatBuySellIndicator(value){
+ 
+    switch (value){
+        case 'B' : return 'B (Buy)';
+        case 'S' : return 'S (Sell)';
+        case 'T' : return 'T (ShortSell)';
+        case 'E' : return 'E (ShortSellExempt)'; 
+        default: return value;
     }
 }
 
