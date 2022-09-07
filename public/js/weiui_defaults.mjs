@@ -1,4 +1,4 @@
-const {formatTS,  formatTIF, formatMessageType,formatDescription,formatMessageTypeCSS} =  await import('./weiui_formatters.mjs');
+const {formatTS,  formatTIF, formatMessageType,formatDescription,formatMessageTypeCSS, formatBuySellIndicator} =  await import('./weiui_formatters.mjs');
 
 const DEFAULT_COLUMNS = [
 "Timestamp",
