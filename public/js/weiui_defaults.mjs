@@ -39,7 +39,7 @@ const DEFAULT_COLUMNS_CONFIG = [
 
 { id:"OrderState", header:"OrderState", width:100},
 { id:"ClientReference", header:"ClientReference", width:100},
-{ id:"BuySellIndicator", header:"BuySellIndicator", width:100},
+{ id:"BuySellIndicator", header:"BuySellIndicator", width:100, format : formatBuySellIndicator },
 { id:"Group", header:"Group", width:100},
 { id:"OrderClassification", header:"OrderClassification", width:100},
 { id:"Capacity", header:"Capacity", width:100},
