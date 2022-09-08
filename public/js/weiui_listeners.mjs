@@ -4,9 +4,14 @@ async function setupListeners() {
 
     const events = ['onSelectChange', 'onItemClick'];
 
-    const {groupBy_ouch_order_token} = await import('./grouper.mjs');
-    const {samples} = await import('./weiui_samples.mjs');
-    const  {jnx_field_definitions}= await import('./weiui_jnx_field_definitions.mjs');
+    //const {groupBy_ouch_order_token} = await import('./grouper.mjs');
+    //const {samples} = await import('./weiui_samples.mjs');
+    //const  {jnx_field_definitions}= await import('./weiui_jnx_field_definitions.mjs');
+    
+    import {groupBy_ouch_order_token} from './grouper.mjs';
+    import {samples} from './weiui_samples.mjs';
+    import  {jnx_field_definitions} from './weiui_jnx_field_definitions.mjs';
+    
 
     $$("table_breakdown").attachEvent("onSelectChange", function () {
         $$('table_breakdown').getSelectedItem(true).forEach(e => {
