@@ -4,11 +4,11 @@ function textLength(a,b){
     return a>b?1:(a<b?-1:0);
 }
 
-// const {formatTS,  formatTIF, formatMessageType,formatDescription,formatMessageTypeCSS} =  await import('./weiui_formatters.mjs');
-// const {DEFAULT_COLUMNS, DEFAULT_COLUMNS_CONFIG} =  await import('./weiui_defaults.mjs');
+ const {formatTS,  formatTIF, formatMessageType,formatDescription,formatMessageTypeCSS} =  await import('./weiui_formatters.mjs');
+ const {DEFAULT_COLUMNS, DEFAULT_COLUMNS_CONFIG} =  await import('./weiui_defaults.mjs');
 
-import {formatTS,  formatTIF, formatMessageType,formatDescription,formatMessageTypeCSS} from './weiui_formatters.mjs';
-import {DEFAULT_COLUMNS, DEFAULT_COLUMNS_CONFIG} from './weiui_defaults.mjs';
+//import {formatTS,  formatTIF, formatMessageType,formatDescription,formatMessageTypeCSS} from './weiui_formatters.mjs';
+//import {DEFAULT_COLUMNS, DEFAULT_COLUMNS_CONFIG} from './weiui_defaults.mjs';
 
 
 function createTreeTable({id}){
