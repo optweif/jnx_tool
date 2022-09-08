@@ -103,7 +103,7 @@ function formatMessageTypeCSS(cellvalue, rowItem,rowid, columnid ){
             break;
         case rowItem['PacketType']==='S' && rowItem['MessageType']==='E' : return 'CSS_MESSAGETYPE_EXECUTED'
             break;
-        case rowItem['PacketType']==='S' && rowItem['MessageType']==='J' : return 'CSS_MESSAGETYPE_EXECUTED'
+        case rowItem['PacketType']==='S' && rowItem['MessageType']==='J' : return 'CSS_MESSAGETYPE_REJECTED'
             break;
         case rowItem['PacketType']==='S' && rowItem['MessageType']==='S' : return 'CSS_MESSAGETYPE_SYSTEMEVENT'
             break;
