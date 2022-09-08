@@ -1,3 +1,7 @@
+    import {groupBy_ouch_order_token} from './grouper.mjs';
+    import {samples} from './weiui_samples.mjs';
+    import  {jnx_field_definitions} from './weiui_jnx_field_definitions.mjs';
+
 async function setupListeners() {
 
     const element_ids = ['table_field_def', 'template_rawmsg', 'table_breakdown', 'list_orderids_search', 'textarea_rawinput', 'list_orderids', 'parseButton', 'clearButton', 'BUTTON_ARRANGE_BY_ORDTOKEN', 'BUTTON_ARRANGE_BY_ID'];
@@ -8,9 +12,7 @@ async function setupListeners() {
     //const {samples} = await import('./weiui_samples.mjs');
     //const  {jnx_field_definitions}= await import('./weiui_jnx_field_definitions.mjs');
     
-    import {groupBy_ouch_order_token} from './grouper.mjs';
-    import {samples} from './weiui_samples.mjs';
-    import  {jnx_field_definitions} from './weiui_jnx_field_definitions.mjs';
+
     
 
     $$("table_breakdown").attachEvent("onSelectChange", function () {
