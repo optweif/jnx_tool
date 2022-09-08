@@ -39,7 +39,11 @@
 
 //alert( window.hasOwnProperty('_'));
 
+    // if (  (typeof window !== "undefined") &&  !window.hasOwnProperty('_')) {
 
+      //  global['_'] = (await import('./lodash.js')).default;
+      //  console.log('loaded lodash lib into global scope!!')
+   // }
 
  if (  (typeof parseOUCHBuffer !== "undefined") ) {
      console.log('Fn parseOUCHBuffer is imported!!')
@@ -57,11 +61,7 @@
 
 function groupBy_ouch_order_token (wEntries){
 
-     if (  (typeof window !== "undefined") &&  !window.hasOwnProperty('_')) {
 
-        global['_'] = (await import('./lodash.js')).default;
-        console.log('loaded lodash lib into global scope!!')
-    }
  
     let root_map = {};
 
