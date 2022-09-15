@@ -87,7 +87,7 @@ function groupBy_ouch_order_token (wEntries){
                 if (_.has(root_map, ouch_msg.OrderToken)) {
                     ouch_msg.wRootOrder = root_map[ouch_msg.OrderToken]
                 } else {
-                    root_map[wRootOrder] = ouch_msg.OrderToken;
+                    root_map['wRootOrder'] = ouch_msg.OrderToken;
                     ouch_msg.wRootOrder = ouch_msg.OrderToken;
                 }
             }
