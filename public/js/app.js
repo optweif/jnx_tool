@@ -106,7 +106,19 @@ async function buildUI() {
 
     webix.ui(createCustomizeColumnForm({ id: 'customize_column_form'}));
         //$$('textarea_rawinput').setValue(samples.map(e=>JSON.stringify(e)+'\n').join(''));
-        $$('textarea_rawinput').setValue(samples.map(e=>(e)+'\n').join(''));
+       // $$('textarea_rawinput').setValue(samples.map(e=>(e)+'\n').join(''));
+    
+     let url_addr = new URLSearchParams(window.location.search);
+     if(url_addr.has('loadurl')){
+          fetch(url_addr.get('loadurl'))
+                  .then(response => response.text())
+                  .then(data =>  $$('textarea_rawinput').setValue(data))
+                  .catch((e)=>{console.log('Error loading url =>'+ url_addr.get('loadurl'))})
+     }else{
+              //$$('textarea_rawinput').setValue(samples.map(e=>JSON.stringify(e)+'\n').join(''));
+              $$('textarea_rawinput').setValue(samples.map(e=>(e)+'\n').join(''));
+     }
+    
         setupListeners();
 }
 
