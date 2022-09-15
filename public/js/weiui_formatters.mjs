@@ -115,6 +115,11 @@ function formatMessageTypeCSS(cellvalue, rowItem,rowid, columnid ){
             break;
         case rowItem['PacketType']==='O' : return 'CSS_PACKETTYPE_LOGOUT'
             break;
+        case rowItem['PacketType']==='H' : return 'CSS_PACKETTYPE_SERVERHBEAT'
+            break;
+        case rowItem['PacketType']==='R' : return 'CSS_PACKETTYPE_CLIENTHBEAT'
+            break;
+           
         default : return;
     }
 
