@@ -110,6 +110,7 @@ async function buildUI() {
     
      let url_addr = new URLSearchParams(window.location.search);
      if(url_addr.has('loadurl')){
+         console.log('Loading external url =>'+ url_addr.get('loadurl'));
           fetch(url_addr.get('loadurl'))
                   .then(response => response.text())
                   .then(data =>  $$('textarea_rawinput').setValue(data))
